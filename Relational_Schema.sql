@@ -115,14 +115,14 @@ SELECT * FROM Loan;
 
 /* --------------------------------------------------------- Query Section --------------------------------------------------------- */
 
--- Query to find employees who have borrowed books published by Scribner
+-- Q1: Query to find employees who have borrowed books published by Scribner
 SELECT DISTINCT E.E_Name
 FROM Employee E
 JOIN Loan L ON E.Empno = L.Empno
 JOIN Books B ON L.ISBN = B.ISBN
 WHERE B.Publisher = 'Scribner';
 
--- Query to find employees who have borrowed all books published by T. Egerton, Whitehall
+-- Q2: Query to find employees who have borrowed all books published by T. Egerton, Whitehall
 SELECT E.E_Name
 FROM Employee E
 JOIN Loan L ON E.Empno = L.Empno
@@ -133,7 +133,7 @@ HAVING COUNT(DISTINCT B.ISBN) = (SELECT COUNT(*)
 FROM Books
 WHERE Publisher = 'T. Egerton, Whitehall');
 
--- Query to find employees who have borrowed more than five books from each publisher
+-- Q3: Query to find employees who have borrowed more than five books from each publisher
 SELECT E.E_Name, B.Publisher
 FROM Employee E
 JOIN Loan L ON E.Empno = L.Empno
