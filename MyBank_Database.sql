@@ -1,3 +1,4 @@
+-- CREATE DATABASE MyBank_Database;
 USE MyBank_Database;
 
 -- Drop tables if they already exist
