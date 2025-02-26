@@ -72,7 +72,7 @@ INSERT INTO Loan_Account VALUES
 
 -- Create the Borrower table
 CREATE TABLE Borrower(
-    PRIMARY KEY(Customer_Name),
+    PRIMARY KEY(Customer_Name, Loan_Number),
     Customer_Name VARCHAR(255) NOT NULL,
     Loan_Number INT NOT NULL
 );
