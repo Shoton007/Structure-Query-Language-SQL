@@ -21,4 +21,7 @@ If you run and check this code at your own machine with diffenent IDE or host yo
 Here some tips to fix this issue when you will use Delimeter section you must use Delimeter // with MySQL Workbench and if you use XAMPP/WAMP you will use Delimeter $$ and also some case are case_sensitive so you need to add BINARY type.
 Some section are bring you error this case your IDE or Database host version are too old so you need to use letest version to avoid this inconvenient error.
 
+About My_Employee_Database.sql
+Some schema uses like (Limit, AVG) you should need eneble with MySQL/PostgreSQL powererd by Weijan Chen extention.
+
 Thank you.
